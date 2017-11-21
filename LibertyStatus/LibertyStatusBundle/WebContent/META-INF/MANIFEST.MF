@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LibertyStatus
+Bundle-SymbolicName: LibertyStatusBundle
+Bundle-Version: 0.0.1
+Bundle-ClassPath: WEB-INF/classes
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: javax.faces;version="1.0.16",
+ javax.faces.bean;version="1.0.16",
+ javax.faces.webapp;version="1.0.16",
+ javax.management,
+ javax.servlet.annotation;version="2.6.0",
+ javax.servlet.http;version="2.6.0"
+Web-ContextPath: /LibertyStatus
+

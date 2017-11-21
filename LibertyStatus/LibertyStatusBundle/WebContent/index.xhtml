@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+<link rel="stylesheet" href="theme/stylesheet.css" type="text/css" />
+<title>Liberty Server Status</title>
+<meta http-equiv="Content-Type"
+	content="application/xhtml+xml; charset=UTF-8" />
+</h:head>
+<h:body>
+	<h2>Liberty Server Status</h2>
+	Hostname : #{status.hostname} <br/>
+	App Server Name : #{status.appSeverName} <br/>
+	Access Time : #{status.accessTime} <br/>
+	Liberty #{status.libertyVersion} using Java #{status.jdkVersion} #{status.jreVersion} <br/>
+	<br/>
+	<h:dataTable value="#{status.applications}" var="o">
+		<h:column>
+			<f:facet name="header">Application Name</f:facet>
+			#{o.name}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Status</f:facet>
+			#{o.state}
+		</h:column>
+	</h:dataTable>
+	<br/>
+</h:body>
+</html>
