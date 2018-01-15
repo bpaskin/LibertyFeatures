@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Subsystem-ManifestVersion: 1.0
+IBM-Feature-Version: 2
+IBM-ShortName: LibertyRegistration
+Subsystem-SymbolicName: LibertyRegistration;visibility:=public
+Subsystem-Version: 1.0.0.qualifier
+Subsystem-Type: osgi.subsystem.feature
+Subsystem-Content: LibertyRegistrationBundle;version=1.0.0
+IBM-ProductID: com.ibm.websphere.appserver
+Subsystem-Name: Liberty Registration
+Subsystem-Description: Register Liberty with a central server
+Subsystem-Localization: OSGI-INF/l10n/subsystem

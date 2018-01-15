@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LibertyRegistration
+Bundle-SymbolicName: LibertyRegistrationBundle
+Bundle-Version: 1.0.0.0
+Bundle-ClassPath: WEB-INF/classes
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8,
+ JavaSE-1.7,
+ JavaSE-1.6
+Web-ContextPath: /LibertyRegistration
+Import-Package: javax.management,
+ javax.persistence;version="2.1.0",
+ javax.sql;version="0.0.0",
+ javax.transaction;version="1.1.0",
+ org.osgi.framework,
+ org.osgi.service.cm
+Bundle-Activator: com.ibm.liberty.feature.resource.Activator
+Meta-Persistence: 
+

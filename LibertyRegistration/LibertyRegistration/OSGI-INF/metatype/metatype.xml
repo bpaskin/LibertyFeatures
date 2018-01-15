@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.1.0" xmlns:ibm="http://www.ibm.com/xmlns/appservers/osgi/metatype/v1.0.0" localization="OSGI-INF/l10n/metatype">
+
+	<OCD description="%feature.desc" name="%feature.name" id="com.ibm.liberty.feauture.registration" ibm:alias="libertyRegistration">
+		<AD id="host" name="%feature.host" description="%feature.host.desc" required="true" type="String" default="localhost"/>
+		<AD id="port" name="%feature.port" description="%feature.port.desc" required="true" type="Integer" default="9443"/>
+		<AD id="protocol" name="%feature.protocol" description="%feature.protocol.desc" required="true" type="String" default="https"/>
+	</OCD>
+
+	<Designate pid="libertyRegistration">
+		<Object ocdref="com.ibm.liberty.feauture.registration"/>
+	</Designate>
+</metatype:MetaData>
