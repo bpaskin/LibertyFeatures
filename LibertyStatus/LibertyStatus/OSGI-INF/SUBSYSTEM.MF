@@ -2,10 +2,10 @@ Subsystem-ManifestVersion: 1.0
 IBM-Feature-Version: 2
 IBM-ShortName: LibertyStatus
 Subsystem-SymbolicName: LibertyStatus;visibility:=public
-Subsystem-Version: 1.0.0
+Subsystem-Version: 1.0.2
 Subsystem-Type: osgi.subsystem.feature
-Subsystem-Content: LibertyStatusBundle;version=0.0.1,
- com.ibm.wsspi.appserver.webBundle-1.0; type="osgi.subsystem.feature",
+Subsystem-Content: LibertyStatusBundle;version=1.2.0,
+ com.ibm.wsspi.appserver.webBundle-1.0;type="osgi.subsystem.feature",
  com.ibm.websphere.appserver.jsf-2.0; ibm.tolerates:="2.2";type="osgi.subsystem.feature",
  com.ibm.websphere.appserver.servlet-3.0; ibm.tolerates:="3.1"; type="osgi.subsystem.feature",
  com.ibm.websphere.appserver.jsp-2.2; ibm.tolerates:="2.3"; type="osgi.subsystem.feature"
@@ -13,3 +13,4 @@ IBM-ProductID: com.ibm.websphere.appserver
 Subsystem-Name: Liberty Status
 Subsystem-Description: Provides Liberty Status page
 Subsystem-Localization: OSGI-INF/l10n/subsystem
+Manifest-Version: 1.0
