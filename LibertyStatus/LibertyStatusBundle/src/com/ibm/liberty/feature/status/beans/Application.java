@@ -12,10 +12,11 @@ import java.io.Serializable;
 
 public class Application implements Serializable {
 	private static final long serialVersionUID = 6145920299007986428L;
+	
 	private String name;
 	private String state; 
 	
-	public String getName() {
+	public String getName() { 
 		return name;
 	}
 	public void setName(String name) {
