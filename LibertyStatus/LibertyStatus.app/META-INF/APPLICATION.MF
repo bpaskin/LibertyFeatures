@@ -1,7 +1,0 @@
-Application-Name: LibertyStatus
-Application-SymbolicName: LibertyStatus.app
-Application-ManifestVersion: 1.0
-Application-Version: 1.2.0
-Application-Content: LibertyStatusBundle;version="1.2.0"
-Manifest-Version: 1.0
-
