@@ -7,11 +7,39 @@
 </h:head>
 <h:body>
 	<h2>Liberty Server Status</h2>
-	<h5>Version 1.2 (2018-05-09)</h5>
-	Hostname : #{status.hostname} <br />
-	App Server Name : #{status.appSeverName} <br />
+	<h5>Version 2.0 (2019-01-22)</h5>
+	Default Hostname : #{status.serverInfo.defaultHostname} <br />
+	System Hostname: #{status.hostname} <br />
+	App Server Name : #{status.serverInfo.serverName} <br />
 	Access Time : #{status.accessTime} <br />
-	Liberty #{status.libertyVersion} using Java #{status.jdkVersion} #{status.jreVersion} <br />
+	Liberty #{status.serverInfo.libertyVersion} using Java #{status.serverInfo.javaSpecVersion} #{status.serverInfo.javaRuntimeVersion} <br />
+	Liberty installation directory:  #{status.serverInfo.installDirectory} <br />
+	Liberty user directory:  #{status.serverInfo.userDirectory} <br />
+	
+	<br />
+	<h:dataTable value="#{status.endpoints}" var="o">
+		<h:column>
+			<f:facet name="header">Endpoint Name</f:facet>
+			#{o}
+		</h:column>
+	</h:dataTable>
+	
+	<br />
+	<h:dataTable value="#{status.endpointInfo}" var="o">
+		<h:column>
+			<f:facet name="header">Listening Endpoint Name</f:facet>
+			#{o.name}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Port</f:facet>
+			#{o.port}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Host</f:facet>
+			#{o.host}
+		</h:column>
+	</h:dataTable>
+	
 	<br />
 	<h:form>
 		<h:dataTable value="#{status.applications}" var="o">
@@ -30,6 +58,13 @@
 				<h:messages for="errors"/>
 		</h:dataTable>
 	</h:form>
+	
 	<br/>
+	<h:dataTable value="#{status.serverConfigFiles}" var="o">
+		<h:column>
+			<f:facet name="header">Configuration Files</f:facet>
+			#{o}
+		</h:column>
+	</h:dataTable>
 </h:body>
 </html>

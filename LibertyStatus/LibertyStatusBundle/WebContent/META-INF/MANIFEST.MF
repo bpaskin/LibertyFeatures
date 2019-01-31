@@ -1,17 +1,35 @@
 Manifest-Version: 1.0
+Automatic-Module-Name: LibertyStatus
 Bundle-ManifestVersion: 2
 Bundle-Name: LibertyStatus
 Bundle-SymbolicName: LibertyStatusBundle
-Bundle-Version: 1.2.0
+Bundle-Version: 2.0.0
 Bundle-ClassPath: WEB-INF/classes
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: com.ibm.websphere.application;version="1.1.0",
- javax.faces,
- javax.faces.application,
- javax.faces.bean,
- javax.faces.context,
- javax.faces.webapp,
+ com.ibm.websphere.config.mbeans;version="1.2.0",
+ com.ibm.websphere.endpoint;version="1.0.0",
+ com.ibm.websphere.jaxrs.server;version="1.1.0",
+ com.ibm.websphere.kernel.server;version="1.0.0",
+ com.ibm.wsspi.kernel.service.location;version="1.2.0",
+ com.ibm.wsspi.kernel.service.utils;version="1.4.0",
+ javax.el;version="2.2.0",
+ javax.faces;version="1.0.16",
+ javax.faces.application;version="1.0.16",
+ javax.faces.bean;version="1.0.16",
+ javax.faces.context;version="1.0.16",
+ javax.faces.webapp;version="1.0.16",
  javax.management,
+ javax.servlet;version="2.6.0",
  javax.servlet.annotation;version="2.6.0",
- javax.servlet.http;version="2.6.0"
+ javax.servlet.http;version="2.6.0",
+ javax.servlet.jsp;version="2.0",
+ javax.servlet.jsp.el;version="2.0",
+ javax.servlet.jsp.tagext;version="2.0",
+ javax.ws.rs;version="1.0.0",
+ javax.ws.rs.core;version="1.0.0",
+ javax.ws.rs.ext;version="1.0.0",
+ org.codehaus.jackson.jaxrs;version="1.6.2",
+ org.osgi.framework;version="1.8.0"
 Web-ContextPath: /LibertyStatus
+
