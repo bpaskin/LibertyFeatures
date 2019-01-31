@@ -5,13 +5,17 @@ Features created for IBM Liberty
 LibertyStatus.esa
 Displays information about the Application Server and status of the applications that are deployed.
 Includes hostname, App Server name, access time, Liberty version number and Java version and release 
-The application names are listed and their current status
+The application names are listed and their current status and are able to stop/start them.  REST endpoint has been added.
 
 To install ```wlp/bin/installUtility install LibertyStatus.esa --to=usr```
 
 Include in server.xml in the ```<featureManager>``` the following feature: ```<feature>usr:LibertyStatus</feature>```
  
 Access via : http://hostname:port/LibertyStatus
+
+REST Access via : http://hostname:port/LibertyStatus/rest
+
+Requires 18.0.0.1 to use all features. Cannot have JEE 8 features enabled or the OSGI Subsystem needs to import JEE 8 features.
 
 # LibertyRegistration
 Registers Liberty servers with the hostname, servername, version, and java information.  Good for large environments and keeping track of the versions of Liberty that are installed and their current characteristics.
